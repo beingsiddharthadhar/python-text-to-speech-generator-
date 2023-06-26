@@ -1,0 +1,10 @@
+pip install gtts
+pip install playsound
+
+
+import gtts
+import playsound
+text=input("enter the text:")
+sound=gtts.gTTS(text,lang="en")
+sound.save("aboutme.mp3")
+playsound.playsound("aboutme.mp3")
